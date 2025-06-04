@@ -8,8 +8,8 @@ export async function fetchMovies(query) {
     return data.Search || [];
 
 }
- export async function fetchTrending() {
-    const trendingTitles = ['Avengers', 'Batman', 'Avatar', 'Interstellar'];
+export async function fetchTrending() {
+    const trendingTitles = ['Avengers'];
     const randomTitle = trendingTitles[Math.floor(Math.random() * trendingTitles.length)];
     return fetchTrending(randomTitle)
 }
