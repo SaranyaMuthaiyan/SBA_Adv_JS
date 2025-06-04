@@ -12,6 +12,10 @@ displayMovies(movies);
     }
 
 };
+const updateTrendingMovies = async () -> {
+    const trendingMovies(trendingMovies);
+
+};
 
 searchButton.addEventListener('click', handleSearch);
 
