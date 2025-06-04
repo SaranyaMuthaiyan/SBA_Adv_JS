@@ -13,11 +13,11 @@ displayMovies(movies);
 
 };
 const updateTrendingMovies = async () => {
+    console.log("Trending Movies...")
     const trendingMovies = await fetchTrending();
     displayMovies(trendingMovies);
 
 };
-
+setInterval(updateTrendingMovies , 10000);
 searchButton.addEventListener('click', handleSearch);
 
-setInterval(updateTrendingMovies , 1000);

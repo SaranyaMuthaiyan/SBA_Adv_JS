@@ -9,7 +9,7 @@ export async function fetchMovies(query) {
 
 }
 export async function fetchTrending() {
-    const trendingTitles = ['Avengers'];
-    const randomTitle = trendingTitles[Math.floor(Math.random() * trendingTitles.length)];
-    return fetchTrending(randomTitle)
+    const trendingTitles = ['Avengers' ,'Titanic'];
+    const randomIndex= Math.floor(Math.random()*trendingTitles.length);
+    return fetchMovies(trendingTitles[randomIndex]);
 }
