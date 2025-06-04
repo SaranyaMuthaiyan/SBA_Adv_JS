@@ -1,11 +1,17 @@
 body{
     font-family:Arial, Helvetica, sans-serif;
     text-align: center;
-    background: #121211;
+    background: gray;
     color:whitesmoke;
 }
 
 input , button {
     padding:10px;
     margin:10px;
+}
+#gallery{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+
 }
