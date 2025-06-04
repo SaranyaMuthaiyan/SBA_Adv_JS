@@ -8,7 +8,7 @@ export function displayMovies(movies) {
         card.classList.add('movie-card');
         card.innerHTML = `
         <h3>${movie.Title}</h3>
-        <img src = "${movie.Poster}" alt = "${movie.Title}" width = "150">
+        <img src = "${movie.Poster}" alt = "${movie.Title}" width = "100">
          <p>Year: ${movie.Year}</p>
         `;
          gallery.appendChild(card);

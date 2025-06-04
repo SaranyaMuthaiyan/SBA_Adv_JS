@@ -1,4 +1,4 @@
-import { fetchMovies} from './script.js';
+import { fetchMovies , fetchTrending} from './script.js';
 import {displayMovies} from './display.js';
 
 const searchInput = document.getElementById('searchInput');
@@ -12,4 +12,7 @@ displayMovies(movies);
     }
 
 };
+
 searchButton.addEventListener('click', handleSearch);
+
+setInterval(updateTrendingMovies , 10000);
