@@ -2,7 +2,7 @@ import { fetchMovies} from './script.js';
 import {displayMovies} from './display.js';
 
 const searchInput = document.getElementById('searchInput');
-const searchButton = document.getElementById('searchbutton');
+const searchButton = document.getElementById('searchButton');
 
 const handleSearch = async () => {
     const query = searchInput.value.trim();
