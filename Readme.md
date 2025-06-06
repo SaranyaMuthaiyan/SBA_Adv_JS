@@ -6,4 +6,5 @@ Created new js file for movie display.Used forEach loop and created a div elemen
 Created one more js file and import both functions here from script.js and display.js. 
 Made lots of mistakes and changes again. Tried to come up with the result.
 When giving a movie name  inside the text area and on click of search button gives an output  of movies with the year.
-Added the setInterval
+Added the setInterval,at first it goes infinite recursion and caused the stack overflow.Then tried to alter with the
+code little.

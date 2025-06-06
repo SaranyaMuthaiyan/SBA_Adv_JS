@@ -8,8 +8,12 @@ export async function fetchMovies(query) {
     return data.Search || [];
 
 }
+
+const trendingTitles = ['Avengers' , 'Batman','Avatar'];
+let currentIndex = 0;
+
 export async function fetchTrending() {
-    const trendingTitles = ['Avengers' ,'Titanic'];
-    const randomIndex= Math.floor(Math.random()*trendingTitles.length);
-    return fetchMovies(trendingTitles[randomIndex]);
+    const title = trendingTitles[currentIndex];
+    currentIndex= (currentIndex + 1) % trendingTitles.length;
+    return fetchMovies(title);
 }

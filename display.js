@@ -14,4 +14,8 @@ export function displayMovies(movies) {
         `;
          gallery.appendChild(card);
     });
-    }
+    
+
+
+
+}
